@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Wheather</title>
 </head>
 <style>
 html,body{
@@ -11,17 +11,45 @@ html,body{
 	margin: 0;
 	padding: 0;
 }
+body{
+	background-color: #fff;
+}
 .container{
+	position: fixed;
+	top: 0;
+	left: 0;
 	height: 100%;
 	width: 100%;
 	background-color: black;
-	filter:alpha(opacity=20);  
-    -moz-opacity:0.2;  
-    -khtml-opacity: 0.2;  
-    opacity: 0.2;  
+	filter:alpha(opacity=50);  
+    -moz-opacity:0.5;  
+    -khtml-opacity: 0.5;  
+    opacity: 0.5;  
+}
+.bg{
+background-color: #fff;
+width: 100%;
+text-align: center;
+}
+.bgImg{
+	display: inline-block;
+}
+.erweima{
+	width: 276px;
+	height: 248px;
+	background-image: url('./erweima.png');
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -138px;
+	margin-top: -124px;
 }
 </style>
 <body>
 	<div class="container"></div>
+	<div class="bg">
+		<img  class="bgImg" src="./weather.jpg">
+	</div>
+	<div class="erweima"></div>
 </body>
 </html>
